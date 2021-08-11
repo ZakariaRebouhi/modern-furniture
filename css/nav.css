@@ -1,0 +1,33 @@
+nav ul{
+position: absolute;
+
+top: 10%;
+left: 0%;
+}
+nav{
+    position: fixed;
+    z-index: 2;
+    transition: .5s;
+    left: -40px;
+    animation: nav-anim 2s ease-in-out  infinite ;
+}
+nav li{
+    margin: 10px 10px;
+}
+nav:hover {
+    opacity: 0.8;
+left: 0;
+animation: nav-anim 0s  ;
+}
+@keyframes nav-anim {
+    from{
+       opacity: .7;
+    }
+    to{
+        opacity: .8;
+    }
+}
+
+
+
+

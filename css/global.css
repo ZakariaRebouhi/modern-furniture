@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    transition: .4s;
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    width: 100%;
+    height: 100vh;
+    
+   
+}
+ul{
+    list-style: none;
+}
+:root{
+    --dark :#37475B ;
+    --light :#E3E4E4 ;
+}
+.dark-bg{
+background-color:var(--dark);
+}
+.light-bg{
+background-color: var(--light);
+}
+.dark{
+    color: var(--dark);
+}
+.light{
+    color: var(--light);
+}
+.see{
+    background-color: red;
+}

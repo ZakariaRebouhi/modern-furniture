@@ -1,0 +1,25 @@
+
+   #Path1{  
+       animation: changePath1 15s infinite linear forwards alternate-reverse;
+   }
+   #Path2{
+    animation: changePath2 15s infinite linear forwards alternate-reverse;
+}
+   @keyframes changePath1 {
+       from{}
+      to{
+        d:path("M31.027,17.154-30.207,88.262-80.294,361.534,94.361,392.676Z")
+       }
+   }
+   @keyframes changePath2 {
+    from{}
+   to{
+     d:path("M57.775,233.48,114.129,50.541H-27.923l-23.846,92.308,47.26-44.318Z")
+    }
+}
+
+
+  
+
+
+   

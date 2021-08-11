@@ -1,0 +1,60 @@
+
+.intro{
+    z-index: 2;
+    position: relative;
+    }
+    .light-slider{
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--light);
+        animation: slid-out 1s  ease  5s  ;
+        animation-fill-mode: forwards;
+    
+    }
+    .intro-slider{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--dark);
+        animation: slid-out 1s  ease  5s  ;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+    }
+    .intro-slider-wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width:50%;
+        height:50%;
+     
+        
+    }
+    .intro-slider-wrap svg {
+        animation: fill-title .5s  ease  3s  ;
+        animation-fill-mode: forwards;
+    }
+    .intro-slider-wrap svg path{
+        animation: anim-title 2s ease forwards;
+    
+    }
+    
+    
+    @keyframes anim-title {
+        to{
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes fill-title {
+        from{
+            fill: transparent;
+        }
+        to{
+            fill: var(--light) ; 
+        }
+    }
+    @keyframes slid-out {
+        to{
+            height: 0;
+        }
+    }

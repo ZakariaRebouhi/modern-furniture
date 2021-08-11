@@ -1,0 +1,202 @@
+  
+
+main{
+    display: flex;  
+}
+main section{
+    height: 100vh;
+}
+
+/* hero */
+.hero{
+    flex-grow: 1;
+    position: relative;
+}
+.hero-body{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-title{
+    font-size: 3.5em;
+    font-weight:800;
+    color:  var(--light);
+}  
+.hero-subtitle{
+    /* font-size: 2.5em; */
+    font-weight: 300;
+    color:  var(--light);
+   margin: 10px 0;
+}
+.hero button{
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor:pointer;
+    border: none;
+
+}
+.hero button:hover{
+    background-color: white;
+}
+
+.hero >svg {
+    position: absolute;
+    width: 10vw;
+    opacity: .9;
+
+}
+
+.hero .svg1 {
+    bottom: 10px;
+    left: 10px;
+
+}
+.hero .svg2 {
+    right: 10px;
+    top: 10px;
+}
+
+/* slider */
+
+.slider{  
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.slider .slide-view {
+
+    overflow: hidden;
+}
+
+.slider .slide-view img{
+    flex-grow: 1;
+    height: 100vh;
+}
+
+
+
+.slider .slide-controller{
+        position: absolute;
+        right: 5px;
+       bottom: 120px;
+       
+    }
+ .slider .svg-slide{
+        position: relative;
+    }
+.slider .slide-controller .slide-btn{
+        display: block;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        border: 2.5px solid skyblue;
+        margin: 10px;
+        cursor:pointer;
+}
+.active-btnSlide {
+    background-color: skyblue ;
+}
+
+ .slide input{
+    display: none;
+}
+.imgHeight{
+    height: 100vh;
+}
+.imgHeight0{
+    height: 0;
+}
+
+@media  (max-width: 912px) {
+    .imgHeight{
+        height: 50vh;
+    }
+    main{
+        display: block;  
+    }
+    main section{
+        height: 50vh;
+        
+    }
+
+    .hero >svg {
+      width: 10vw;
+    
+    }
+    .hero .svg1 {
+        bottom: -90%;
+        left: 0;
+    
+    }
+    .hero .svg2 {
+        right: 80%;
+        top: 50%;
+    }
+    .hero-title{
+        font-size: 2.5em;
+        font-weight:600;
+       
+    }
+    .hero-subtitle{
+     
+        font-weight: 300;
+        color:  var(--light);
+       margin: 10px 0;
+    }
+    .hero button{
+        padding: 5px 10px;
+        font-weight: 700;
+        font-size: 1em;
+    
+    }
+    
+    .slider  .svg-slide svg {
+    width: 60px;
+    }
+    .slider  .slide-view img{
+        flex-grow: 0;
+        height: 50vh;
+    }
+    .slider .svg-slide{
+        flex-grow: 1;
+        position: relative;
+      
+    }
+    .slider svg{
+        float: right;
+    }
+
+    .slider .slide-controller{
+        position: absolute;
+        right: 0px;
+        bottom: 50px;
+    }
+    .slider .slide-controller .slide-btn{
+   
+        border: 1.5px solid skyblue;
+        width: 10px;
+        height: 10px;
+        
+        }
+
+      
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
